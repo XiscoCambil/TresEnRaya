@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" manifest="cache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xisco Cambil Reynes">
+    <meta name="description" content="Juego de tres en raya">
+    <meta name="keywords" content="tres,raya,juego">
+    <meta name="application-name" content="Tres en raya">
+    <meta name="robots" content="index,follow">ç
+    <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
+    <title>Tres en raya</title>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">
+        <img src="imagenes/icono/iconoTresenRaya.png" alt="icono Tres en raya">
+        <span>Tres en raya</span>
+    </a>
+    <ul>
+        <li><a href="index.html">Juego</a></li>
+        <li><a href="configuracion.html">Configuración</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="plugin.html">Plugin</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1>Contacta con nosotros</h1>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3075.0925005218983!2d2.6758313453299456!3d39.58006560035492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1451498431481"
+                width="600" height="450" allowfullscreen frameborder="0"></iframe>
+
+        <h2>Formulario de contacto</h2>
+
+        <!-- Primer formulario que dara paso a la eleccion de uno de los dos formularios de abajo -->
+
+        <form method="post" id="preguntaInicial" action="#">
+            <select>
+                <option value="consulta">Quiero hacer una consulta</option>
+                <option value="funcionalidad">Quiero reportar un error</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <!-- Formulario para la consulta normal -->
+
+        <form method="post" id="consulta" action="#">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre" required="required">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="email" required="required">
+            <label>Comentario</label>
+            <textarea name="comentario" required="required" rows="9"></textarea>
+            <input type="submit">
+        </form>
+
+        <!-- Formulario para consulta sobre errores -->
+
+        <form method="post" id="funcionalidad" action="#">
+            <input type="checkbox" name="color" value="color" checked> no se ven los colores
+            <input type="checkbox" name="casilla" value="casilla"> no se intrducen los simbolos
+            <input type="checkbox" name="ganar" value="ganar"> no gano cuando formo el 3 en raya
+            <input type="checkbox" name="navegador" value="navegador"> no me carga el juego
+            <label>Otros errores</label>
+            <textarea name="comentario" required="required" rows="9"></textarea>
+            <input type="submit">
+        </form>
+
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

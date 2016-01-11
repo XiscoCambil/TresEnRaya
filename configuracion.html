@@ -7,11 +7,11 @@
     <meta name="description" content="Juego de tres en raya">
     <meta name="keywords" content="tres,raya,juego">
     <meta name="application-name" content="Tres en raya">
-    <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
     <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
     <title>Tres en raya</title>
 </head>
-<body >
+<body>
 <nav>
     <a href="index.html">
         <img src="imagenes/icono/iconoTresenRaya.png" alt="icono Tres en raya">
@@ -28,14 +28,31 @@
 </nav>
 <main>
     <section>
-        <h1>Tres en raya</h1>
-        <!-- Lienzo donde dibujaremos el juego de tres en raya -->
-        <canvas>
+        <h1>Configuraciòn</h1>
 
-        </canvas>
+        <p>Aqui puedes elegir las diferentes opciones para configurar el juego</p>
+
+        <!-- Formulario para elegir las diferentes opciones del juego -->
+
+        <form method="post" id="configuracion" action="#">
+            <label>Nivel de dificultad:</label>
+            <select>
+                <option value="facil">Facil</option>
+                <option value="dificil">Dificil</option>
+            </select>
+            <label>Idioma:</label>
+            <select>
+                <option value="castellano">Castellano</option>
+                <option value="catalan">Catalan</option>
+                <option value="ingles">Ingles</option>
+            </select>
+            <label>Modo de partida:</label>
+            <input type="radio" name="jugar" value="robot"> Jugar contra robot
+            <input type="radio" name="jugar" value="humano"> Jugar contra humano
+            <input type="submit">
+        </form>
     </section>
 </main>
-
 <footer>
 
 </footer>
